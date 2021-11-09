@@ -8,8 +8,12 @@ body{
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.calcola{
+    font-size: 40px;
+    color: rgb(102, 153, 0);
+}
 button{
-    padding: 30px;
+    padding: 25px;
     margin: 2px 2px;
     border-radius: 0;
     border: 0;
@@ -26,6 +30,7 @@ button:hover{
     left: 50%;
     transform: translate(-50%, -50%);
     border: 3px solid #1b1b1b;
+    box-shadow: 0 0 40px 2px;
     #display{
         height: 100%;
         border: 2px solid #1b1b1b;
@@ -46,7 +51,7 @@ button:hover{
     }
     #operation {
         display: grid;
-        border: 1px solid #1b1b1b;
+        border: 1px solid #1b1b1b60;
         margin-left: 5px;
     }
     #number{
