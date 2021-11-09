@@ -24,6 +24,7 @@ for (x of operation){
 const calcola = document.querySelector('#number .calcola')
 calcola.addEventListener('click',()=>{
     let  calc = total + firstNum;
+    display[0].innerText = calc
     display[1].innerText= eval(calc)
     firstNum = calc;
     calc = ""  

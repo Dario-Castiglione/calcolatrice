@@ -40,11 +40,13 @@ button:hover {
 
 .wrap #display #display-up {
   height: 20px;
+  margin-right: 5px;
 }
 
 .wrap #display #display-down {
-  border: 1px solid red;
   height: 40px;
+  font-size: 32px;
+  margin-right: 5px;
 }
 
 .wrap .calculator-body {
