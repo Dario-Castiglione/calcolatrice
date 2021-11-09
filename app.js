@@ -26,6 +26,6 @@ calcola.addEventListener('click',()=>{
     let  calc = total + firstNum;
     display[0].innerText = calc
     display[1].innerText= eval(calc)
-    firstNum = calc;
+    firstNum = eval(calc);
     calc = ""  
 })
