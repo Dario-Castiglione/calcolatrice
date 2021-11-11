@@ -6,8 +6,40 @@
 }
 
 body {
-  height: 100vh;
+  height: 80vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.modale {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid;
+  width: 400px;
+  margin: 0 auto;
+  background: rgba(110, 110, 110, 0.808);
+  display: none;
+}
+
+.modale p {
+  color: white;
+  font-size: 20px;
+  padding: 2px 15px;
+}
+
+.modale p strong {
+  color: #00460f;
+}
+
+.modale h1 {
+  text-align: center;
+}
+
+#log {
+  display: block;
+  margin: 90px auto 0;
 }
 
 .calcola {
@@ -21,6 +53,7 @@ button {
   border-radius: 0;
   border: 0;
   font-size: 25px;
+  cursor: pointer;
 }
 
 button:hover {
@@ -63,11 +96,36 @@ button:hover {
   margin-top: 20px;
 }
 
-.wrap #operation {
-  display: -ms-grid;
-  display: grid;
+.wrap #op {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border: 1px solid #1b1b1b60;
   margin-left: 5px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.wrap #op #delete {
+  font-size: 16px;
+}
+
+.wrap #op button {
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
 }
 
 .wrap #number {

@@ -10,14 +10,16 @@
 </head>
 
 <body>
+    <button id="log">Vedi log</button>
     <div class="wrap">
         <div id="display">
             <p id="display-up"></p>
             <p id="display-down"></p>
         </div>
-        
+
         <div class="calculator-body">
             <div id="number">
+    
                 <button class="num" id="1">1</button>
                 <button class="num" id="2">2</button>
                 <button class="num" id="3">3</button>
@@ -31,15 +33,24 @@
                 <button class="num" id="0">0</button>
                 <button class="calcola">=</button>
             </div>
-            <div id="operation">
-                <button id="+">+</button>
-                <button id="-">-</button>
-                <button id="*">*</button>
-                <button id="/">/</button>
+            <div id="op">
+                    <div class="canc">
+                        <button id="delete">del</button>
+                        <button id="canc">⬅</button>
+                    </div>
+                <div id="operation">
+                    <button id="+">+</button>
+                    <button id="-">-</button>
+                    <button id="*">*</button>
+                    <button id="/">/</button>
+                </div>
             </div>
         </div>
     </div>
-
+<div class="modale">
+    <h1>LOG</h1>
+    
+</div>
 
     <script src="app.js"></script>
 </body>
